@@ -15,6 +15,11 @@ using namespace std; // gives opportunity not to type std:: each time
 //to check everything inside comment(even /*)
 
 int main() {
+  float number;
+  std::cout << "Input your salary: ";
+  std::cin >> number;
+  std::cout << "Your salary is: " << number << std::endl;
+  std::cout << "Your salary in 10 years is: " << number * 10 << std::endl;
   std::cout << "Hello, world!\n";
   cout << "Second way to type" << std::endl;
   std::cout << "Check if newline was added" << endl;
