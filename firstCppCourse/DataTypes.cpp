@@ -32,5 +32,12 @@ int main() {
   std::cout << "Char memory: " << sizeof(char) << " bytes\n";
   std::cout << "Long memory: " << sizeof(long) << " bytes\n";
 
+  int max_int = INT_MAX;
+  std::cout << max_int + 1 << endl;
+
+  cout << (int)'a' << endl;
+  cout << (int)('a') << endl;
+  cout << (char) 97 << endl;
+
   return 0;
 }
