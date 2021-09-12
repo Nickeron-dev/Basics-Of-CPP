@@ -18,5 +18,14 @@ int main() {
   bool result1 = (a == 5 && b-- == 5);
   std::cout << result1 << std::endl;
   //system("cls"); // it might be os-dependent
+
+  double doubleValue = 5.7;
+  int integerValue = 5;
+  int sumWithout = 3;
+  sumWithout = sumWithout + doubleValue;
+  std::cout << sumWithout << std::endl;
+  int sumWith = integerValue;
+  sumWith += doubleValue;
+  std::cout << sumWith << std::endl;
   return 0;
 }
