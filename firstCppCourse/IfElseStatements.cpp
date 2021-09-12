@@ -9,5 +9,7 @@ int main() {
   } else {
     std::cout << "Your number: " << inputtedNumber << " is odd" << "\n";
   }
+
+  system("cls");
   return 0;
 }
