@@ -10,6 +10,13 @@ int main() {
     std::cout << "Your number: " << inputtedNumber << " is odd" << "\n";
   }
 
-  system("cls");
+  int a = 5, b = 6;
+  std::cout << (a == 5 && b == 5) << '\n';
+  bool result = (a == 5 && --b == 5);
+  std::cout << result << std::endl;
+  b = 6;
+  bool result1 = (a == 5 && b-- == 5);
+  std::cout << result1 << std::endl;
+  //system("cls"); // it might be os-dependent
   return 0;
 }
