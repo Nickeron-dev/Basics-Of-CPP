@@ -9,6 +9,12 @@
 /Users/illiakoskin/Documents/git/Basics-Of-CPP/sfml-examples/first-sfml/main.cpp
 SFML/Graphics.hpp
 -
+iostream
+-
+ApplicationServices/ApplicationServices.h
+-
+unistd.h
+-
 
 /opt/homebrew/include/SFML/Config.hpp
 TargetConditionals.h
