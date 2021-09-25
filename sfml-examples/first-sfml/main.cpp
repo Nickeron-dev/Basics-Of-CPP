@@ -34,9 +34,44 @@ int main()
         while (true)
         {
             if (state) {
-                CGEventSetIntegerValueField(event, kCGMouseEventClickState, 1);
-                std::cout << "Clicking!\n";
-                click();
+                //First Variant
+//                CGPoint pt;
+////                pt.x = sf::Mouse::getPosition().x;
+////                pt.y = sf::Mouse::getPosition().y;
+//                pt.x = 300;
+//                pt.y = 300;
+//
+//                CGPostMouseEvent( pt, 1, 1, 1 );
+//                CGPostMouseEvent( pt, 1, 1, 0 );
+//                sleep(1);
+
+
+                //int x = sf::Mouse::getPosition().x;
+                //int y = sf::Mouse::getPosition().y;
+                //CGEventRef not_real = CGEventCreate(NULL);
+                //CGPoint cursor = CGEventGetLocation(not_real);
+                //CFRelease(event);
+                //int x = cursor.x;
+                //int y = cursor.y;
+                CGEventRef click1_down = CGEventCreateMouseEvent(
+                        NULL, kCGEventLeftMouseDown,
+                        CGPointMake(250, 250),
+                        kCGMouseButtonLeft
+                );
+                // Left button up at 250x250
+                CGEventRef click1_up = CGEventCreateMouseEvent(
+                        NULL, kCGEventLeftMouseUp,
+                        CGPointMake(250, 250),
+                        kCGMouseButtonLeft
+                );
+                CGEventPost(kCGHIDEventTap, click1_down);
+                CGEventPost(kCGHIDEventTap, click1_up);
+                sleep(1);
+                // Release the events
+                CFRelease(click1_up);
+                CFRelease(click1_down);
+                std::cout << "X = " << 250 << " Y = " << 250 << std::endl;
+                //state = false;
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::K)) {
                 state = true;
@@ -47,6 +82,8 @@ int main()
 }
 
 extern "C" bool click() {
+    //__CGEvent *event;
+    //CGEventSetIntegerValueField(event, kCGMouseEventClickState, 1);
     /*
     CGEventRef click1_down = CGEventCreateMouseEvent(
             NULL, kCGEventLeftMouseDown,

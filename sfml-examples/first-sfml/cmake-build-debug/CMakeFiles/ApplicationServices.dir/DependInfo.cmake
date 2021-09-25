@@ -8,15 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/illiakoskin/Documents/git/Basics-Of-CPP/sfml-examples/first-sfml/main.cpp" "/Users/illiakoskin/Documents/git/Basics-Of-CPP/sfml-examples/first-sfml/cmake-build-debug/CMakeFiles/HelloSFML.dir/main.cpp.o"
+  "/Users/illiakoskin/Documents/git/Basics-Of-CPP/sfml-examples/first-sfml/main.cpp" "/Users/illiakoskin/Documents/git/Basics-Of-CPP/sfml-examples/first-sfml/cmake-build-debug/CMakeFiles/ApplicationServices.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/include"
-  "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/ApplicationServices.framework"
-  "/opt/homebrew/include"
   )
 
 # The set of dependency files which are needed:
