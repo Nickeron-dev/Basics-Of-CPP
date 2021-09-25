@@ -4,6 +4,6 @@
 
 int main(int argc, char *argv[]) {
     QCoreApplication a(argc, argv);
-    qDebug() << "Hello World";
+    QTest::mouseClick(d, Qt::LeftButton, Qt::NoModifier, QPoint(x,y));
     return QCoreApplication::exec();
 }

@@ -15,4 +15,7 @@ add_executable(untitled main.cpp)
 target_link_libraries(untitled
         Qt5::Core
         )
+find_package(SFML 2.5 COMPONENTS system window graphics network audio REQUIRED)
+include_directories(${SFML_INCLUDE_DIRS})
+target_link_libraries(HelloSFML sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
 
