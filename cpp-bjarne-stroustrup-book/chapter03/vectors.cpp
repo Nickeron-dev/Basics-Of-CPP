@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 //using vect = std::vector;
 namespace v = std;
@@ -71,7 +72,18 @@ int main() {
 		std::cout << *i << " ";
 	}
 	std::cout << std::endl;
+	
+	std::cout << "==================\n";
 
+        std::vector<int> array_list_sort;
+        array_list_sort.push_back(5);
+        array_list_sort.emplace_back(4);
+        array_list_sort.push_back(2);
+        array_list_sort.emplace_back(10);
+        std::sort(array_list_sort.begin(), array_list_sort.end());
+        for (auto i = array_list_sort.begin(); i != array_list_sort.end(); i++) {
+                std::cout << *i << " ";
+        }
 	
 	std::cout << "=============" << std::endl;
 
@@ -147,6 +159,7 @@ int main() {
 	std::cout << "\nBack(): " << floats.back() << std::endl;
 	std::cout << "Front(): " << floats.front() << std::endl;
 	std::cout << "Data(): " << floats.data() << std::endl; 
+
 //	std::cin.get(); // getting input from console
 	return 0;
 }

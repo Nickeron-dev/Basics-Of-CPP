@@ -1,6 +1,15 @@
 #include <iostream>
 
+// This is an interface, because it has only pure virtual methods
 class interface_shape {
+public:
+        virtual double area() = 0;
+//        virtual double perimeter() = 0;
+};
+
+// This is an abstract class, because it has
+// defined methods(get_height, get_width) and a pure virtual function
+class abstract_shape : interface_shape {
 public:
 	virtual double area() = 0; // this is pure vitual function
 //	virtual double  perimeter() = 0; // pure virtual
@@ -18,7 +27,7 @@ protected:
 	int m_width;
 };
 
-class triangle : interface_shape {
+class triangle : abstract_shape {
 public: 
 	triangle(int m_width, int m_height) {
 		this->m_width =  m_width;
