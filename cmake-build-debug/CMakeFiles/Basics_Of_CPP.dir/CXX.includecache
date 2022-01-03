@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/illiakoskin/Documents/git/Basics-Of-CPP/other-small-sources/data_structures/map_try.cpp
+iostream
+-
+map
+-
+string
+-
+
