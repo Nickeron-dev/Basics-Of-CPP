@@ -1,0 +1,3 @@
+/Users/illiakoskin/Documents/git/Basics-Of-CPP/sql_try/sql_clion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/illiakoskin/Documents/git/Basics-Of-CPP/sql_try/sql_clion/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/illiakoskin/Documents/git/Basics-Of-CPP/sql_try/sql_clion/cmake-build-debug/CMakeFiles/sql_clion.dir
