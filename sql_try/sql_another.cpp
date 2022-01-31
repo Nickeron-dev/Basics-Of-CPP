@@ -1,4 +1,4 @@
-#include </usr/local/mysql-8.0.26-macos11-arm64/include/mysql.h>
+// #include </usr/local/mysql-8.0.26-macos11-arm64/include/mysql.h>
 #include <iostream>
 #include <stdlib.h>
 
