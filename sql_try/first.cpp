@@ -1,63 +1,161 @@
-/* Standard C++ includes */
-#include <stdlib.h>
 #include <iostream>
+#include <mysqlx/xdevapi.h>
 
-/*
-  Include directly the different
-  headers from cppconn/ and mysql_driver.h + mysql_util.h
-  (and mysql_connection.h). This will reduce your build time!
-*/
-#include <mysql.h>
 
-// #include <cppconn/driver.h>
-// #include <cppconn/exception.h>
-// #include <cppconn/resultset.h>
-// #include <cppconn/statement.h>
+using ::std::cout;
+using ::std::endl;
+using namespace ::mysqlx;
 
-using namespace std;
 
-int main(void)
+int main(int argc, const char* argv[])
 {
-cout << endl;
-cout << "Running 'SELECT 'Hello World!' »
-   AS _message'..." << endl;
+        try {
 
-try {
-  sql::Driver *driver;
-  sql::Connection *con;
-  sql::Statement *stmt;
-  sql::ResultSet *res;
+          const char   *url = (argc > 1 ? argv[1] : "mysqlx://root@127.0.0.1");
 
-  /* Create a connection */
-  driver = get_driver_instance();
-  con = driver->connect("tcp://127.0.0.1:3306", "root", "root");
-  /* Connect to the MySQL test database */
-  con->setSchema("test");
+          cout << "Creating session on " << url
+               << " ..." << endl;
 
-  stmt = con->createStatement();
-  res = stmt->executeQuery("SELECT 'Hello World!' AS _message");
-  while (res->next()) {
-    cout << "\t... MySQL replies: ";
-    /* Access column data by alias or column name */
-    cout << res->getString("_message") << endl;
-    cout << "\t... MySQL says it again: ";
-    /* Access column data by numeric offset, 1 is the first column */
-    cout << res->getString(1) << endl;
+          Session sess(url);
+
+          {
+          /*
+            TODO: Only working with server version 8
+          */
+
+            RowResult res = sess.sql("show variables like 'version'").execute();
+            std::stringstream version;
+
+            version << res.fetchOne().get(1).get<string>();
+            int major_version;
+            version >> major_version;
+
+            if (major_version < 8)
+            {
+              cout <<"Done!" <<endl;
+              return 0;
+            }
+          }
   }
-  delete res;
-  delete stmt;
-  delete con;
-
-} catch (sql::SQLException &e) {
-  cout << "# ERR: SQLException in " << __FILE__;
-  cout << "(" << __FUNCTION__ << ") on line " »
-     << __LINE__ << endl;
-  cout << "# ERR: " << e.what();
-  cout << " (MySQL error code: " << e.getErrorCode();
-  cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+          catch (...)
+          {
+            cout <<"ERROR: " <<endl;
+            return 1;
+          }
+          // catch (std::exception &ex)
+          // {
+          //   cout <<"STD EXCEPTION: " <<ex.what() <<endl;
+          //   return 1;
+          // }
+          // catch (const char *ex)
+          // {
+          //   cout <<"EXCEPTION: " <<ex <<endl;
+          //   return 1;
+          // }
 }
 
-cout << endl;
 
-return EXIT_SUCCESS;
-}
+
+//   cout <<"Session accepted, creating collection..." <<endl;
+//
+//   Schema sch= sess.getSchema("test");
+//   Collection coll= sch.createCollection("c1", true);
+//
+//   cout <<"Inserting documents..." <<endl;
+//
+//   coll.remove("true").execute();
+//
+//   {
+//     Result add;
+//
+//     add= coll.add(R"({ "name": "foo", "age": 1 })").execute();
+//     std::vector<string> ids = add.getGeneratedIds();
+//     cout <<"- added doc with id: " << ids[0] <<endl;
+//
+//     add= coll.add(R"({ "name": "bar", "age": 2, "toys": [ "car", "ball" ] })")
+//              .execute();
+//     if (ids.size() != 0)
+//       cout <<"- added doc with id: " << ids[0] <<endl;
+//     else
+//       cout <<"- added doc" <<endl;
+//
+//     add= coll.add(R"({
+//        "name": "baz",
+//         "age": 3,
+//        "date": { "day": 20, "month": "Apr" }
+//     })").execute();
+//     if (ids.size() != 0)
+//       cout <<"- added doc with id: " << ids[0] <<endl;
+//     else
+//       cout <<"- added doc" <<endl;
+//
+//     add= coll.add(R"({ "_id": "myuuid-1", "name": "foo", "age": 7 })")
+//              .execute();
+//     ids = add.getGeneratedIds();
+//     if (ids.size() != 0)
+//       cout <<"- added doc with id: " << ids[0] <<endl;
+//     else
+//       cout <<"- added doc" <<endl;
+//   }
+//
+//   cout <<"Fetching documents..." <<endl;
+//
+//   DocResult docs = coll.find("age > 1 and name like 'ba%'").execute();
+//
+//   DbDoc doc = docs.fetchOne();
+//
+//   for (int i = 0; doc; ++i, doc = docs.fetchOne())
+//   {
+//     cout <<"doc#" <<i <<": " <<doc <<endl;
+//
+//     for (Field fld : doc)
+//     {
+//       cout << " field `" << fld << "`: " <<doc[fld] << endl;
+//     }
+//
+//     string name = doc["name"];
+//     cout << " name: " << name << endl;
+//
+//     if (doc.hasField("date") && Value::DOCUMENT == doc.fieldType("date"))
+//     {
+//       cout << "- date field" << endl;
+//       DbDoc date = doc["date"];
+//       for (Field fld : date)
+//       {
+//         cout << "  date `" << fld << "`: " << date[fld] << endl;
+//       }
+//       string month = doc["date"]["month"];
+//       int day = date["day"];
+//       cout << "  month: " << month << endl;
+//       cout << "  day: " << day << endl;
+//     }
+//
+//     if (doc.hasField("toys") && Value::ARRAY == doc.fieldType("toys"))
+//     {
+//       cout << "- toys:" << endl;
+//       for (auto toy : doc["toys"])
+//       {
+//         cout << "  " << toy << endl;
+//       }
+//     }
+//
+//     cout << endl;
+//   }
+//
+//   cout <<"Done!" <<endl;
+// }
+// catch (const mysqlx::Error &err)
+// {
+//   cout <<"ERROR: " <<err <<endl;
+//   return 1;
+// }
+// catch (std::exception &ex)
+// {
+//   cout <<"STD EXCEPTION: " <<ex.what() <<endl;
+//   return 1;
+// }
+// catch (const char *ex)
+// {
+//   cout <<"EXCEPTION: " <<ex <<endl;
+//   return 1;
+// }
