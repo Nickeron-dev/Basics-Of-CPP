@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<server><name>Name of this server</name><port>8080</port><channels><channel><name>second</name></channel></channels></server>
