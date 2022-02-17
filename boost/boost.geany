@@ -20,22 +20,19 @@ indent_mode=2
 [project]
 name=boost
 base_path=/Users/illiakoskin/Documents/git/Basics-Of-CPP/boost
+description=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=8
-FILE_NAME_0=192;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fvariant%2Fvariant_boost.cpp;0;4
-FILE_NAME_1=1020;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fvariant%2Fvariant_std.cpp;0;4
-FILE_NAME_2=166;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fproperty_tree%2Fxml_parser.cpp;0;4
-FILE_NAME_3=413;XML;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fproperty_tree%2Fproperty.xml;0;4
-FILE_NAME_4=359;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fproperty_tree%2Fxml_creator.cpp;0;4
-FILE_NAME_5=47;XML;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fproperty_tree%2Fcreated_xml;0;4
-FILE_NAME_6=431;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fdynamic_bitset%2Fdynamic_bitset_boost.cpp;0;4
-FILE_NAME_7=183;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Ftribool%2Ftribool_boost.cpp;0;4
-FILE_NAME_8=297;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fcompressed_pair%2Fcompressed_pair.cpp;0;4
+current_page=4
+FILE_NAME_0=757;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fcontainers%2Fmulti_index.cpp;0;4
+FILE_NAME_1=434;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fcontainers%2Fbimap.cpp;0;4
+FILE_NAME_2=690;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fcontainers%2Fcircular_buffer.cpp;0;4
+FILE_NAME_3=477;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fcontainers%2Fheaps.cpp;0;4
+FILE_NAME_4=584;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fcontainers%2Fintrusive.cpp;0;4
 
 [VTE]
 last_dir=/Users/illiakoskin
