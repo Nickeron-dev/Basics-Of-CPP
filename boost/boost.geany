@@ -21,18 +21,29 @@ indent_mode=2
 name=boost
 base_path=/Users/illiakoskin/Documents/git/Basics-Of-CPP/boost
 description=
+file_patterns=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=4
-FILE_NAME_0=757;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fcontainers%2Fmulti_index.cpp;0;4
-FILE_NAME_1=434;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fcontainers%2Fbimap.cpp;0;4
-FILE_NAME_2=690;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fcontainers%2Fcircular_buffer.cpp;0;4
-FILE_NAME_3=477;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fcontainers%2Fheaps.cpp;0;4
-FILE_NAME_4=584;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fcontainers%2Fintrusive.cpp;0;4
+current_page=5
+FILE_NAME_0=237;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fnumber_handling%2Finteger.cpp;0;4
+FILE_NAME_1=278;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fnumber_handling%2Fconversions.cpp;0;4
+FILE_NAME_2=432;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fother_libraries%2Foperators.cpp;0;4
+FILE_NAME_3=232;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fapplication_libraries%2Flog.cpp;0;4
+FILE_NAME_4=83;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fapplication_libraries%2Fprogram_options.cpp;0;4
+FILE_NAME_5=377;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fdesign_patterns%2Fflyweight.cpp;0;4
 
 [VTE]
 last_dir=/Users/illiakoskin
+
+[build-menu]
+C++FT_00_LB=_Compile
+C++FT_00_CM=g++ -ansi -pedantic -Wall -Wextra -Weffc++ --std=c++17 "%f" -o execs/"%e"
+C++FT_00_WD=
+C++FT_01_LB=_Build
+C++FT_01_CM=g++ -ansi -pedantic -Wall -Wextra -Weffc++ --std=c++17 "%f" -o execs/"%e"
+C++FT_01_WD=
+filetypes=C++;
