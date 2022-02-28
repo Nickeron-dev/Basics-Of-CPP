@@ -1,0 +1,8 @@
+/*
+ * hello.cpp
+ */
+#include <stdio.h>
+void hello()
+{
+	printf("Hello World!\n");
+}
