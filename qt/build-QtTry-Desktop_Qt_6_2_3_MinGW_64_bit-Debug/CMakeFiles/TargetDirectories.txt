@@ -1,0 +1,5 @@
+C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/QtTry.dir
+C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/QtTry_autogen_timestamp_deps.dir
+C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/QtTry_autogen.dir

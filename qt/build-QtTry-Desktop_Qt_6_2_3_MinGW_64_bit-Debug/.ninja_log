@@ -1,0 +1,21 @@
+# ninja log v5
+13	91	0	C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	5814aa50dc736c9
+17	669	6682986920190927	QtTry_autogen/timestamp	f6eacf397f018fb9
+800	6111	6682986974625260	CMakeFiles/QtTry.dir/mainwindow.cpp.obj	62ed312e7502101b
+17	669	6682986920190927	QtTry_autogen/mocs_compilation.cpp	f6eacf397f018fb9
+702	799	6682986921477635	C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/QtTry/QtTry_en_DE.ts	a7ea5fefd69cc520
+17	669	6682986920190927	C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/QtTry_autogen/timestamp	f6eacf397f018fb9
+3563	7875	6682917735129353	CMakeFiles/QtTry.dir/QtTry_autogen/mocs_compilation.cpp.obj	400e090a00f73ccf
+17	669	6682986920190927	C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/QtTry_autogen/mocs_compilation.cpp	f6eacf397f018fb9
+3580	8125	6682917737649312	CMakeFiles/QtTry.dir/main.cpp.obj	cc0be3c8f63da2b9
+6113	6632	6682986979714569	QtTry.exe	f5dcb5153bba7e60
+9	86	0	C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	5814aa50dc736c9
+17	543	6683010236570445	QtTry_autogen/timestamp	f6eacf397f018fb9
+17	543	6683010236570445	QtTry_autogen/mocs_compilation.cpp	f6eacf397f018fb9
+17	543	6683010236570445	C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/QtTry_autogen/timestamp	f6eacf397f018fb9
+17	543	6683010236570445	C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/QtTry_autogen/mocs_compilation.cpp	f6eacf397f018fb9
+579	716	6683010238310979	C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/QtTry/QtTry_en_DE.ts	a7ea5fefd69cc520
+717	4424	6683010275390734	CMakeFiles/QtTry.dir/QtTry_autogen/mocs_compilation.cpp.obj	6ed418984210249
+732	4633	6683010277490729	CMakeFiles/QtTry.dir/main.cpp.obj	97e67755d27c3ccc
+725	5347	6683010284630950	CMakeFiles/QtTry.dir/mainwindow.cpp.obj	10c74eef4b860aa
+5348	5892	6683010289997827	QtTry.exe	f5dcb5153bba7e60

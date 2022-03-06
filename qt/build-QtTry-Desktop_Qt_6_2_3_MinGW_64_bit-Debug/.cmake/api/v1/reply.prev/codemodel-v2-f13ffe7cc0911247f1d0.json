@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "QtTry",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "QtTry::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtTry-Debug-c2b6de29d211a424d29b.json",
+					"name" : "QtTry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtTry_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtTry_autogen-Debug-1a0d370ce049a7458f97.json",
+					"name" : "QtTry_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtTry_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtTry_autogen_timestamp_deps-Debug-923e4061ce6dde85a073.json",
+					"name" : "QtTry_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/build-QtTry-Desktop_Qt_6_2_3_MinGW_64_bit-Debug",
+		"source" : "C:/Users/koshk/Documents/git/Basics-Of-CPP/qt/QtTry"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
