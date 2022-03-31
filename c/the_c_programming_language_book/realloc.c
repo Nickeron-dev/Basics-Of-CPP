@@ -3,10 +3,9 @@
 
 int main(int argc, char **argv)
 {
-	int *ptr;
 	int number_of_el = 5;
 	
-	ptr = (*int) calloc(number_of_el, sizeof(int));
+	int *ptr = /*(*int) don't cast, it is done implicitly!!!*/ calloc(number_of_el, sizeof *ptr ); // *ptr -> int
 	if (ptr == NULL)
 	{
 		printf("Memory was not allocated\n");
@@ -23,7 +22,7 @@ int main(int argc, char **argv)
 	}
 	
 	number_of_el = 20;
-	ptr = realloc(ptr, number_of_el * sizeof(int));
+	ptr = realloc(ptr, number_of_el * sizeof *ptr );
 	if (ptr == NULL)
 	{
 		printf("Memory was not reallocated\n");
@@ -37,6 +36,7 @@ int main(int argc, char **argv)
 			printf("val: %d\n", *(ptr + number_of_el));
 		}
 		free(ptr);
+		
 	}
 	return 0;
 }
