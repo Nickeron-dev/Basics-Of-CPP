@@ -1,0 +1,3 @@
+/Users/illiakoskin/Documents/git/Basics-Of-CPP/cmake/tutorial/first/build/CMakeFiles/TutorialExec.dir
+/Users/illiakoskin/Documents/git/Basics-Of-CPP/cmake/tutorial/first/build/CMakeFiles/edit_cache.dir
+/Users/illiakoskin/Documents/git/Basics-Of-CPP/cmake/tutorial/first/build/CMakeFiles/rebuild_cache.dir
