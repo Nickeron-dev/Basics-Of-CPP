@@ -2,21 +2,21 @@ pipeline {
 	agent any
 	
 	 stages {
-		stage('Compile stage') {
+		stage("Compile stage") {
 			steps {
-				'sh g++ -Wall -Wextra -Wpedantic --std=c++17 project_source_file.cpp -o execs/project_source_file' 
+				sh "g++ -Wall -Wextra -Wpedantic --std=c++17 project_source_file.cpp -o execs/project_source_file" 
 			}
 		}
 		
-		stage('Testing stage') {
+		stage("Testing stage") {
 			steps {
-				'sh echo Testing' 
+				sh "echo Testing"
 			}
 		}
 		
-		stage('Deployment stage') {
+		stage("Deployment stage") {
 			steps {
-				'sh ./execs/project_source_file' 
+				sh "./execs/project_source_file"
 			}
 		}
 	 }
