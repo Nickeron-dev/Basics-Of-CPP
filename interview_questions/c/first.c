@@ -66,38 +66,62 @@ int main(void)
 }
 */
 
-// How to return a 2d array?
-const int n = 3;
-void print_array(int **arr)
+// How to return a 2d array? (doesn't work on C, only C++)
+//const int n = 3;
+//void print_array(int **arr)
+//{
+	//for (int i = 0; i < n; i++)
+	//{
+		//for (int j = 0; j < n; j++)
+		//{
+			//printf("%d \n", arr[i][j]);
+		//}
+	//}
+//}
+
+//int** generate_arr()
+//{
+	//int** arr = new int*[n];
+	//for (int i = 0; i < n; i++)
+	//{
+		//arr[i] = new int[n];
+		//for (int j = 0; j < n; j++)
+		//{
+			//arr[i][j] = i + j;
+		//}
+	//}
+	//return arr;
+//}
+
+//int main(void)
+//{
+	//int **arr;
+	//arr = generate_arr();
+	//print_array(arr);
+	//return 0;
+//}
+
+// How to use function pointers? How to use arrays of function pointers?
+int increment(int val)
 {
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; j < n; j++)
-		{
-			printf("%d \n", arr[i][j]);
-		}
-	}
+	return ++val;
 }
 
-int** generate_arr()
+int get_back(int (*func)(int), int val)
 {
-	int **arr = new int*[n];
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = new int[n];
-		for (int j = 0; j < n; j++)
-		{
-			arr[i][j] = i + j;
-		}
-	}
-	return arr;
+	int answer = func(val);
+	return --answer;
 }
 
 int main(void)
 {
-	int **arr;
-	arr = generate_arr();
-	print_array(arr);
+	int (*func)(int) = increment;
+	printf("%d\n", func(5));
+	//printf("%d\n", func(5, 5)); // there will be no error, only warning
+	int (*normalize)(int (*fun)(int), int) = get_back;
+	printf("%d\n", normalize(func, 5));
+	int (*arr[2])(int) = {increment, increment};
+	printf("%d\n", (*arr[0])(5));
+	printf("%d\n", (*arr[1])(5));
 	return 0;
 }
-
